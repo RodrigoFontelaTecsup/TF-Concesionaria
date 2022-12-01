@@ -13,17 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('autos', function (Blueprint $table) {
+        Schema::create('alquiler', function (Blueprint $table) {
             $table->id();
-            $table->string('marca');
+            $table->string('fecha_inicio');
+            $table->string('fecha_fin');
             $table->integer('precio');
-            $table->string('color');
-            $table->string('kilometraje');
-            $table->integer('stock');
-            $table->string('categoria');
-            $table->string('rutaAuto');
-            $table->unsignedBigInteger('id_mantenimiento');        
-            $table->foreign('id_mantenimiento')->references('id')->on('mantenimiento');
+            $table->string('pago');
+            $table->unsignedBigInteger('cliente');
+            $table->foreign('id_cliente')->references('id')->on('cliente');
+            $table->unsignedBigInteger('id_mantenimiento');
+            $table->foreign('id_mantenimiento')->references('id')->on('Mantenimiento');
             $table->timestamps();
         });
     }
@@ -35,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('auto');
+        Schema::dropIfExists('alquiler');
     }
 };

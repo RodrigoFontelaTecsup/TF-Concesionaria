@@ -50,12 +50,15 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'nombre' => ['required', 'string', 'max:255'],
+            'apellido' => ['required', 'string', 'max:255'],
+            'dni' => ['required', 'string', 'max:255', 'max:8'],
+            'celular' => ['required', 'string', 'min:6', 'max:9'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'DNI' => ['required', 'string', 'max:255'],
-            'Licencia' => ['required', 'string', 'max:255'],
-            'Telefono' => ['required', 'string', 'max:255'],
+            'estado' => ['required', 'string', 'max:255'],
+            'direccion' => ['required', 'string', 'max:255'],
+            
         ]);
     }
 
@@ -68,12 +71,16 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
+            'nombre' => $data['nombre'],
+            'apellido' => $data['apellido'],
+            'dni' => $data['dni'], 
+            'celular' => $data['celular'],
             'email' => $data['email'],
+            'estado' => $data['estado'],
+            'direccion' => $data['direccion'],
+
             'password' => Hash::make($data['password']),
-            'DNI' => $data['DNI'],
-            'Licencia' => $data['Licencia'],
-            'Telefono' => $data['Telefono']
+            
         ]);
     }
 }
