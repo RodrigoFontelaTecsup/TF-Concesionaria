@@ -139,7 +139,7 @@
         <div class="album py-5 bg-light">
             <div class="container">
         
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="tama">
+                {{-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="tama">
                     @foreach($autos as $auto)
                     <div class="col">
                         <div class="card shadow-sm">
@@ -165,7 +165,7 @@
                         </div>
                     </div>  
                     @endforeach
-                </div>
+                </div> --}}
             </div>
         </div>
     </main>

@@ -26,9 +26,10 @@ class HomeController extends Controller
      */
     public function index()
     {
+        return view('catalogo');
         //$id = auth()->user()->id;
         //$autos = Auto::all()->with('user')->where('id',$id);
-        $autos = Auto::all();
-        return view('catalogo')->with('autos',$autos);
+        // $autos = Auto::all();
+        // return view('catalogo')->with('autos',$autos);
     }
 }

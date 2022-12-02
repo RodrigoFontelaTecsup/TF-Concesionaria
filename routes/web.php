@@ -19,7 +19,10 @@ use App\Http\Controllers\PromocionController;
 |
 */
 Auth::routes();
-Route::get('/', function () {return view('welcome');});
+
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // Ruta Alquiler
 Route::get('home/alquiler', [AlquilerController::class, 'alquiler']);
@@ -70,7 +73,5 @@ Route::get('/admin/promociones',[PromocionController::class,'promociones']);
 
 ?>
 
-<!-- Route::get('nombredeRuta', function(){
-    return "";
-}) -->
+
 
