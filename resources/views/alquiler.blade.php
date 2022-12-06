@@ -113,6 +113,13 @@
         a:link, a:visited, a:active { 
             text-decoration:none;
         }
+        .body{            
+                /*Fondo*/
+            background-image: url(https://acegif.com/wp-content/uploads/gifs/race-car-19.gif);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed; 
+        }
 
     </style>
 

@@ -7,6 +7,8 @@ use App\Http\Controllers\CompraController;
 use App\Http\Controllers\MisAutosController;
 use App\Http\Controllers\AlquilerController;
 use App\Http\Controllers\PromocionController;
+use App\Http\Controllers\UsersController;
+use App\Http\Controllers\CategoriaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,20 +20,33 @@ use App\Http\Controllers\PromocionController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// Ruta crud 
+
 Auth::routes();
 
 Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('welcome', [HomeController::class, 'home'])->name('welcome');
+
+// Ruta crud usuarios
+Route::resource('users', UsersController::class);
+
+// Ruta crud autos
+Route::resource('autos', AutoController::class);
+
+// Ruta crud alquiler
+Route::get('alquiler', [])->name('alquiler.rodrigo');
+
+
 // Ruta Alquiler
 Route::get('home/alquiler', [AlquilerController::class, 'alquiler']);
-
 
 Route::get('/catalogo', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/mostrarImagenAuto/{nombre}', [App\Http\Controllers\AutoController::class, 'mostrarImagenAuto'])->name('mostrarImagenAuto');
-
 
 Route::get('/compras/{id}',[CompraController::class, 'comprarAuto']);
 
@@ -48,28 +63,8 @@ Route::get('/cliente/almacen',function(){
     return '/cliente/almacen';
 });
 
-Route::get('/admin/info_clientes',function(){
-    return '';
-});
-
-Route::get('/admin/info_ventas',function(){
-    return '';
-});
-
-Route::get('/admin/info_alquileres',function(){
-    return '';
-});
-
-Route::get('/admin/info_vehiculos',function(){
-    return '';
-});
-
-Route::get('/admin/edit_clientes',function(){
-    return '';
-});
-
-
-Route::get('/admin/promociones',[PromocionController::class,'promociones']);
+// Ruta Categoria
+Route::get('/categoria', [CategoriaController::class, 'categorias']);
 
 ?>
 

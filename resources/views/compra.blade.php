@@ -69,6 +69,11 @@ body,html {
   height:100%;
   margin:0;
   font-family:lato;
+  /*Fondo*/
+  background-image: url(https://acegif.com/wp-content/uploads/gifs/race-car-19.gif);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; 
 }
 
 h2 {

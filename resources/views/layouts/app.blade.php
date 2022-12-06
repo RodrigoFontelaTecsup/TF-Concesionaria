@@ -29,6 +29,12 @@
             animation: gradient 12s ease infinite;
             -webkit-text-size-adjust: 100%;
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            
+            /*Fondo*/
+            background-image: url(https://acegif.com/wp-content/uploads/gifs/race-car-19.gif);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed; 
         }
 
         @keyframes gradient {
@@ -85,13 +91,16 @@
             transition: all 0.4s ease-in-out;
         }
 
+
+        #nombre,
+        #apellido,
         #email,
         #password,
-        #name,
         #password-confirm,
-        #DNI,
-        #Licencia,
-        #Telefono {
+        #dni,
+        #celular,
+        #estado,
+        #direccion {
             width: 100%;
             height: 30px;
             background-color: transparent;

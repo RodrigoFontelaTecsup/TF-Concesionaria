@@ -16,14 +16,13 @@ return new class extends Migration
         Schema::create('autos', function (Blueprint $table) {
             $table->id();
             $table->string('marca');
-            $table->integer('precio');
+            $table->string('modelo');
+            $table->string('precio');
             $table->string('color');
             $table->string('kilometraje');
             $table->integer('stock');
             $table->string('categoria');
             $table->string('rutaAuto');
-            $table->unsignedBigInteger('id_mantenimiento');        
-            $table->foreign('id_mantenimiento')->references('id')->on('mantenimiento');
             $table->timestamps();
         });
     }

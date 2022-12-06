@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class PromocionController extends Controller
 {
     public function promociones(){
-        return "negros";
+        return "promociones";
     }
 }

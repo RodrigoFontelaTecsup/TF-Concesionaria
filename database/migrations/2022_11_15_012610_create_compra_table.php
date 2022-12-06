@@ -15,10 +15,8 @@ return new class extends Migration
     {
         Schema::create('compra', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_users');
-            $table->foreign('id_users')->references('id')->on('users');
-            $table->unsignedBigInteger('id_autos');
-            $table->foreign('id_autos')->references('id')->on('autos');
+            $table->integer('dni_users');
+            $table->integer('codigo_autos');
             $table->string('Estado');
             $table->string('Forma de pago');
             $table->timestamps();

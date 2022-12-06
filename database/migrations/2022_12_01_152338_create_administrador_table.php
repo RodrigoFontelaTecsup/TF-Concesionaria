@@ -15,8 +15,6 @@ return new class extends Migration
     {
         Schema::create('administrador', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_venta');
-            $table->foreign('id_venta')->references('id')->on('venta');
             $table->string('Nombre');
             $table->string('Apellido');
             $table->string('Dni');

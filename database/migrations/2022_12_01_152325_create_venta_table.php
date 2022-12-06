@@ -15,12 +15,10 @@ return new class extends Migration
     {
         Schema::create('venta', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_auto');
-            $table->foreign('id_auto')->references('id')->on('autos');
+            $table->string('codigo_auto');
             $table->string('fecha_venta');
             $table->integer('precio_venta');
-            $table->unsignedBigInteger('id_cliente');
-            $table->foreign('id_cliente')->references('id')->on('cliente');
+            $table->string('dni_cliente');
             $table->string('tipo_pago');
             $table->timestamps();
         });

@@ -17,12 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('fecha_inicio');
             $table->string('fecha_fin');
-            $table->integer('precio');
+            $table->string('precio');
             $table->string('pago');
-            $table->unsignedBigInteger('cliente');
-            $table->foreign('id_cliente')->references('id')->on('cliente');
-            $table->unsignedBigInteger('id_mantenimiento');
-            $table->foreign('id_mantenimiento')->references('id')->on('Mantenimiento');
+            $table->integer('dni_cliente');
+            $table->string('Fecha_mantenimiento');
             $table->timestamps();
         });
     }

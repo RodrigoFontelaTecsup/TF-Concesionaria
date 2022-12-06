@@ -31,13 +31,19 @@
             font-size: var(--bs-body-font-size);
             font-weight: var(--bs-body-font-weight);
             line-height: var(--bs-body-line-height);
-            color: var(--bs-body-color);
+            color: var(--bs-body-color);agr
             text-align: var(--bs-body-text-align);
             background: linear-gradient(90deg, rgb(40, 41, 88) 0%, rgb(18, 74, 125) 32%, rgb(20, 106, 136) 52%, rgb(0, 104, 163) 94%);
             background-size: 300% 100%;
             animation: gradient 12s ease infinite;
             -webkit-text-size-adjust: 100%;
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            
+            /*Fondo*/
+            background-image: url(https://acegif.com/wp-content/uploads/gifs/race-car-19.gif);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed; 
         }
         .h2-titulos{
             font-size: 50px;
@@ -308,6 +314,16 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('home') }}">CATALOGO</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="{{ route('users.index') }}">USUARIOS REGISTRADOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="{{ route('autos.index') }}">VEHICULOS REGISTRADOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" >ALQUILERES</a>
+                            </li>
+                            
                         </ul>
                         
                         <div class="dropdown text-end">
@@ -476,11 +492,8 @@
 
         <!-- FOOTER -->
 
-
         <!-- https://www.toyotaperu.com.pe/listado-modelos-toyota-->
     </main>
-
-
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
 

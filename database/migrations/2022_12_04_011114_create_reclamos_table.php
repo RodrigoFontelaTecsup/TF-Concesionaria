@@ -13,12 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('mantenimiento', function (Blueprint $table) {
+        Schema::create('reclamos', function (Blueprint $table) {
             $table->id();
-            $table->string('Fecha_entrada');
-            $table->string('Fecha_salida');
-            $table->string('Motivo');
-            $table->integer('Costo');
+            $table->integer('dni_cliente');
+            $table->string('Nombre');
+            $table->string('Apellidos');
+            $table->string('Reclamo');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mantenimiento');
+        Schema::dropIfExists('reclamos');
     }
 };

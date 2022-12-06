@@ -6,21 +6,19 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-class Auto extends Eloquent
+class Alquiler extends Eloquent
 {
     use HasFactory;
-    public function Compra(){
-        return $this->hasOne(Compra::class);
-    }
 
     protected $fillable = [
-        'marca',
-        'modelo',
+        'fecha_inicio',
+        'fecha_fin',
         'precio',
-        'color',
-        'kilometraje',
+        'pago',
+        'dni_cliente',
         'stock',
         'categoria',
-        'rutaAuto',
+        'Fecha_mantenimiento',
     ];
+    
 }
