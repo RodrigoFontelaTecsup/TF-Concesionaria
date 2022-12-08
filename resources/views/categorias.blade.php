@@ -181,6 +181,8 @@
             </nav>
         </header>
 
+
+        
         <main>
             <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
                 <div class="col-md-5 p-lg-5 mx-auto my-5">
@@ -189,63 +191,63 @@
                         this example based on Apple’s marketing pages.</p>
                     <a class="btn btn-outline-secondary" href="#">Coming soon</a>
                 </div>
-                <div class="product-device shadow-sm d-none d-md-block"></div>
-                <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+                <div class="product-device shadow-sm d-none d-md-block" style="background-image: url('https://p4.wallpaperbetter.com/wallpaper/754/491/710/luxury-cars-4k-mclaren-570s-supercar-wallpaper-preview.jpg')"></div>
+                <div class="product-device product-device-2 shadow-sm d-none d-md-block" style="background-image: url('http://1.bp.blogspot.com/-prlMGHgMbdQ/UCB6wDL6r4I/AAAAAAAAEOs/1RqXAuZxaz4/s640/TheMasterPro98%2B(66).jpg')"></div>
             </div>
 
             <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
                 <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                     <div class="my-3 py-3">
-                        <h2 class="display-5">Another headline</h2>
+                        <h2 class="display-5">AUTO DEPORTIVO</h2>
+                        <p class="lead">REDEFINE EL ESTILO</p>
+                    </div>
+                    <div class="bg-light shadow-sm mx-auto "
+                        style="background-image: url('https://elcomercio.pe/resizer/1vPxxpA9TBtWHal4xoEUipwdrFk=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/5GFRILE77RAARAESGE45NPIYUM.jpg'); width: 70%; height: 300px; border-radius: 21px 21px 0 0;" ></div>
+                </div>
+                <div  class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" >
+                    <div class="my-3 p-3" > 
+                        <h2 class="display-5">AUTO NISSAN</h2>
+                        <p class="lead">ACTIVA TU ACTITUD</p>
+                    </div>
+                    <div  style="background-image: url('https://elcomercio.pe/resizer/c5wbZxTSYlARQG0Cdn0nn2JdC7M=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/Q7VQXBPDKJCBBEGSZAXB3RLSZE.JPG'); width: 70%; height: 300px; border-radius: 21px 21px 0  0;" >
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="my-3 p-3">
+                        <h2 class="display-5">AUTO CONVERTIBLE</h2>
+                        <p class="lead">DISEÑADA PARA HACER MÁS</p>
+                    </div>
+                    <div class="bg-dark shadow-sm mx-auto" style="background-image: url('https://gestion.pe/resizer/bmLexyoRSmJTrUZe-7Z3pn2S2aA=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/PIQQZ4LD7ZAPDCJS4T5W3U7RRI.jpg'); width: 70%; height: 300px; border-radius: 21px 21px 0 0;" >
+                    </div>
+                </div>
+                <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="my-3 py-3">
+                        <h2 class="display-5">AUTO COUPE</h2>
                         <p class="lead">And an even wittier subheading.</p>
                     </div>
                     <div class="bg-light shadow-sm mx-auto"
-                        style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-                </div>
-                <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                    <div class="my-3 p-3">
-                        <h2 class="display-5">Another headline</h2>
-                        <p class="lead">And an even wittier subheading.</p>
-                    </div>
-                    <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                    </div>
+                    style="background-image: url('https://elcomercio.pe/resizer/43p7tMWirCUxLGFZmPuqDBd0GFk=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/XBHUPDAXBNF6XLLFM7SJD22TWU.jpeg'); width: 70%; height: 300px; border-radius: 21px 21px 0 0;" ></div>
                 </div>
             </div>
 
             <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-                <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                     <div class="my-3 p-3">
-                        <h2 class="display-5">Another headline</h2>
+                        <h2 class="display-5">AUTO VAN</h2>
                         <p class="lead">And an even wittier subheading.</p>
                     </div>
-                    <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                    </div>
-                </div>
-                <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                    <div class="my-3 py-3">
-                        <h2 class="display-5">Another headline</h2>
-                        <p class="lead">And an even wittier subheading.</p>
-                    </div>
-                    <div class="bg-light shadow-sm mx-auto"
-                        style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-                </div>
-            </div>
-
-            <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-                <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                    <div class="my-3 p-3">
-                        <h2 class="display-5">Another headline</h2>
-                        <p class="lead">And an even wittier subheading.</p>
-                    </div>
-                    <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <div class="bg-body shadow-sm mx-auto" style="background-image: url('https://elcomercio.pe/resizer/Ab9Mm6-rZ4AMCCw5_r6Ir86Mcv8=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/2EWYDPYV2NEPDKTG4OSVCQFDLI.jpg'); width: 70%; height: 300px; border-radius: 21px 21px 0 0;" >
                     </div>
                 </div>
                 <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                     <div class="my-3 py-3">
-                        <h2 class="display-5">Another headline</h2>
+                        <h2 class="display-5">AUTO ROADSTER</h2>
                         <p class="lead">And an even wittier subheading.</p>
                     </div>
-                    <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <div class="bg-body shadow-sm mx-auto" style="background-image: url('https://elcomercio.pe/resizer/4b32CZmQ8Xi1B2mIF96zu6C_dEA=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/2YVR3YSIXNB5TNRMR6LI6HL2MM.jpg'); width: 70%; height: 300px; border-radius: 21px 21px 0 0;" >
                     </div>
                 </div>
             </div>
@@ -253,19 +255,19 @@
             <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
                 <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                     <div class="my-3 p-3">
-                        <h2 class="display-5">Another headline</h2>
+                        <h2 class="display-5">AUTO SEDAN</h2>
                         <p class="lead">And an even wittier subheading.</p>
                     </div>
                     <div class="bg-body shadow-sm mx-auto"
-                        style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                    style="background-image: url('https://peru21.pe/resizer/3t4OxhBfseFuRMWrJYNxkG2Gftk=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/TSTBNB4JYJFFPORYYGCO2EVD5E.jpg'); width: 70%; height: 300px; border-radius: 21px 21px 0 0;" ></div>
                 </div>
-                <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                     <div class="my-3 py-3">
-                        <h2 class="display-5">Another headline</h2>
+                        <h2 class="display-5">AUTO CABRIOLET</h2>
                         <p class="lead">And an even wittier subheading.</p>
                     </div>
                     <div class="bg-body shadow-sm mx-auto"
-                        style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                    style="background-image: url('https://elcomercio.pe/resizer/yizmWQxhVk2xKUoN4GUsa2Hfd1M=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/QNLV7STPDBFUZM3Q2HQ3DVV4EY.jpg'); width: 70%; height: 300px; border-radius: 21px 21px 0 0" ></div>
                 </div>
             </div>
         </main>

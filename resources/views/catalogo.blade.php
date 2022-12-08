@@ -172,7 +172,7 @@
                                                     id="mostrar">Caracteristicas</button>
                                                 <button type="button" class="btn btn-sm btn-outline-secondary"><a
                                                         style="color:#ffffff"
-                                                        href="/compras/{{ $auto->id }}">Comprar</a></button>
+                                                        href="{{ route('comprar.index') }}">Comprar</a></button>
                                             </div>
                                         </div>
                                         <div class="collapse" id="collapseExample{{ $auto->id }}">

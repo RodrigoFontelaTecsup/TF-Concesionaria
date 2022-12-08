@@ -9,10 +9,10 @@ use App\Models\Auto;
 class AutoController extends Controller
 {
     
-    // public function mostrarImagenAuto(String $nombre){
-    //     $file = Storage::disk('autos')->get($nombre);
-    //     return \Image::make($file)->response();
-    // }
+    public function mostrarImagenAuto(String $nombre){
+        $file = Storage::disk('autos')->get($nombre);
+        return \Image::make($file)->response();
+    }
 
     public function index(){
 

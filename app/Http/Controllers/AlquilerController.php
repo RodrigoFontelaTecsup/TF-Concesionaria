@@ -20,7 +20,6 @@ class AlquilerController extends Controller
 
     public function alquiler(){
 
-        $autos = Alquiler::all();
-        return view('alquier.index', compact('alquiler'));
+        return view('alquiler');
     }
 }

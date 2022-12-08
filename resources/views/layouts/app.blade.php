@@ -147,8 +147,8 @@
                         </ul>
                         <div class="cerrar-sesion">
                             <div class="dropdown text-end">
-                                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="https://peru21.pe/resizer/NBlbnlt-TxnMTjRNU1t9FzRb7lk=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/7HZ5PE55JJHCVP5A2O7F2BGV3Y.jpg" alt="mdo" width="32" height="32" class="j">
+                                <a  href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img style="border-radius: 100%;" src="https://peru21.pe/resizer/NBlbnlt-TxnMTjRNU1t9FzRb7lk=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/7HZ5PE55JJHCVP5A2O7F2BGV3Y.jpg" alt="mdo" width="32" height="32" class="j">
                                 </a>
 
                                 <!-- cerrar sesion -->

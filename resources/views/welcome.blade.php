@@ -289,12 +289,15 @@
 
     <header>
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                
                 <div class="container-fluid">
                     <a class="navbar-brand" href="{{ url('/') }}">
                         INICIO
+                    
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                         <span class="navbar-toggler-icon"></span>
+                        
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -321,8 +324,9 @@
                                 <a class="nav-link active" href="{{ route('autos.index') }}">VEHICULOS REGISTRADOS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" >ALQUILERES</a>
+                                <a class="nav-link active" href="{{ route('alquiler.index') }}">ALQUILERES</a>
                             </li>
+                            
                             
                         </ul>
                         
@@ -346,11 +350,11 @@
                 </div>
             </nav>
         </header>
-
     <main>
 
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
+            
+        <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -376,7 +380,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="https://la-motorbit-media.s3.amazonaws.com/2016/08/modelos-autos-clasicos-hindustan.jpg" />
+                    <img class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="https://la-motorbit-media.s3.amazonaws.com/2016/08/modelos-autos-clasicos-hindustan.jpg" />
 
                     <div class="container" >
                         <div class="carousel-caption" id="dato">
@@ -405,18 +409,15 @@
         <div class="container marketing">
 
             <!-- Three columns of text below the carousel -->
-            <div class="row" id="circulo">
-                <div class="col-lg-3">
-                    <img class="bd-placeholder-img rounded-circle" id="circulo" width="190" height="190" xmlns="http://www.w3.org/2000/svg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzikov6LKRB-AzG4oc-YO80iLNQzlLVnjhjA&usqp=CAU" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img class="bd-placeholder-img rounded-circle" id="circulo" width="190" height="190" xmlns="http://www.w3.org/2000/svg"src="https://www.toyotaperu.com.pe/sites/default/files/rav4_sistema-de-audio_interior_0_0.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div class="row" id="">
 
 
+            
+                <div class="" style="text-align:center;">
+                <iframe width="1200" height="500" src="https://www.youtube-nocookie.com/embed/YViEpnmDrn0?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img class="bd-placeholder-img rounded-circle" id="circulo" width="190" height="190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" src="https://www.toyotaperu.com.pe/sites/default/files/cargador-celular-inalambrico-toyota_0_0.png" preserveAspectRatio="xMidYMid slice" focusable="false">
-                </div><!-- /.col-lg-4 -->
+                
+
             </div><!-- /.row -->
 
 

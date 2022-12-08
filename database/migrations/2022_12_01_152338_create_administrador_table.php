@@ -19,9 +19,6 @@ return new class extends Migration
             $table->string('Apellido');
             $table->string('Dni');
             $table->string('Correo');
-            $table->string('Celular');
-            $table->string('Estado');
-            $table->string('Direccion');
             $table->timestamps();
         });
     }

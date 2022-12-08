@@ -3,18 +3,17 @@
 @section('title', 'CRUD DE USUARIOS REGISTRADOS')
 
 @section('content')
-    
-    <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-        <nav class="h-16 flex justify-end py-4 px-16">
-            <a href="{{ route('welcome') }}"
+    <nav class="h-16 flex justify-end py-4 px-16">
+        <a href="{{ route('welcome') }}"
                 class="text-white rounded px-4 pt-1 h-10 bg-yellow-500 font-semibold mx-2
                 hover:bg-yellow-600">Home</a>
-            <a href="{{ route('autos.create') }}"
-                class="text-white rounded px-4 pt-1 h-10 bg-green-500 font-semibold mx-2
-                hover:bg-green-600">Registrar</a>
-        </nav>
+    </nav>
+    <div style="opacity: .4;" class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+
         <table class="table-fixed w-full" style="border: 2px solid black;"> 
+
             <thead style="border: 2px solid black;">
+                
                 <tr class="bg-gray-400 text-white py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
                     <th class="w-1/8 py-4">Nombre</th>
                     <th class="w-1/8 py-4">Apellido</th>

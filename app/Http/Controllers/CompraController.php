@@ -18,5 +18,9 @@ class CompraController extends Controller
         $autos = Auto::where('id',$id)->first();
         return view('compra')->with('auto',$autos);
     }
+
+    public function index(){
+        return view('compra');
+    }
 }
 
