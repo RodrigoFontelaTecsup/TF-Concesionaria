@@ -10,9 +10,9 @@ class Compra extends Eloquent
 {
     use HasFactory;
     public function Auto(){
-        return $this->hasOne(Auto::class);
+        return $this->embedsMany(Auto::class);
     }
     public function user(){
-        return $this->hasMany(user::class);
+        return $this->embedsMany(user::class);
     }
 }
