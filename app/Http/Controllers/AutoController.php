@@ -32,7 +32,6 @@ class AutoController extends Controller
     }
 
     public function store(Request $request){
-
         $auto = new Auto();
 
         $auto->marca = $request->marca;

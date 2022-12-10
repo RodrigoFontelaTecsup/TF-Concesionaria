@@ -1,6 +1,8 @@
 @extends('layouts.app')
+@section('title', 'ALQUILERES')
+
 @section('content')
-    <div class="mx-auto mt-5 text-center" style="width: 400px;">
-        <h1>Pagina de alquileres</h1>
+    <div class="mx-auto mt-5 text-center">
+        <h1>Bienvenido al apartado de alquileres</h1>
     </div>
 @endsection

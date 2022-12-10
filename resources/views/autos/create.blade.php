@@ -31,7 +31,12 @@
     <label for="categoria">Categoria</label>
     <input class="my-2 w-full bg-gray-200 p-2 text-lg rounded placeholder-gray-1000" name="categoria">
 
-    <button type="submit" class="my-3 w-full bg-blue-500 p-2 font-semibold
-    rounded text-white hover:bg-blue-600">Enviar</button>
+    <div class="col-auto">
+        <input style="font-size:0.8em;" class="form-control" type="file" name="auto">
+    </div>
+
+    <div class="col-auto">
+        <button style="font-size: 0.8em;" type="submit" class="btn btn-primary mb-3">Subir auto</button>
+    </div>
 </form>
 @endsection

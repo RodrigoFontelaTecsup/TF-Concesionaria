@@ -7,19 +7,15 @@ use App\Models\Alquiler;
 
 class AlquilerController extends Controller
 {
-    /*
+
     public function alquiler(){
-        return view('alquiler');
+
+        $alquiler = Alquiler::all();
+        return view('alquiler.index', compact('alquiler'));
+        //return "Bienvenido a la pestaña alquiler";
     }
 
     public function index(){
-        $alquileres = Alquiler::all();
-        return view('alquiler.index');
-    }
-    */
-
-    public function alquiler(){
-
         return view('alquiler');
     }
 }

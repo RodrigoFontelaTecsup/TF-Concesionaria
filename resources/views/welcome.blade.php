@@ -301,9 +301,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                            
                             @guest
-
                             <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('login') }}">LOGIN</a>
                             </li>
@@ -318,19 +316,11 @@
                                 <a class="nav-link active" href="{{ route('home') }}">CATALOGO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('users.index') }}">USUARIOS REGISTRADOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('autos.index') }}">VEHICULOS REGISTRADOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('alquiler.index') }}">ALQUILERES</a>
+                                <a class="nav-link active" href="{{ route('alquiler') }}">ALQUILER</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('contactanos') }}">CONTACTANOS!</a>
                             </li>
-                            
-                            
                         </ul>
                         
                         <div class="dropdown text-end">

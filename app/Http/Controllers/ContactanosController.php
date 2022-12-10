@@ -14,14 +14,14 @@ class ContactanosController extends Controller
 
     public function store(Request $request){
         
-        $request->validate([
-            'name' => 'required',
-            'correo' => 'required|email',
-            'mensaje' => 'required',
-        ]);
+        // $request->validate([
+        //     'name' => 'required',
+        //     'correo' => 'required|email',
+        //     'mensaje' => 'required',
+        // ]);
 
         $correo = new ContactanosMailable($request->all());
-        Mail::to('Nira.Motors@gmail.com')->send($correo);
+        Mail::to('rodrigofontela123@gmail.com')->send($correo);
 
         return redirect()->route('contactanos');
 
