@@ -319,6 +319,9 @@
                                 <a class="nav-link active" href="{{ route('alquiler') }}">ALQUILER</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link active" href="{{ route('categoria') }}">CATEGORIA</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('contactanos') }}">CONTACTANOS!</a>
                             </li>
                         </ul>

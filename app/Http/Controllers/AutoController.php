@@ -14,11 +14,38 @@ class AutoController extends Controller
     //     $file = Storage::disk('autos')->get($nombre);
     //     return \Image::make($file)->response();
     // }
-    public function mostrarFoto(string $rutaAuto)
+    public function mostrarAuto(string $rutaAuto)
     {
         $file = Storage::disk('autos')->get($rutaAuto);
         return Image::make($file)->response();
     }
+
+    // ESTE CODIGO SE PUEDE ELIMINAR (CODIGO 2)
+    public function subirAuto(Request $request){
+        if($request->hashFile('auto')){
+            $id = auth()->user()->id;
+            $image = $request->file('auto');
+            $fileName = time() . '.' . $image->getClientOriginalExtension();
+            $user = Auto::find($id);
+            $auto = $user->Autos()->save(
+                new Auto(['marca' => $request->marca,
+                'modelo'=> $request->modelo,
+                'precio'=> $request->precio,
+                'color' => $request->color,
+                'kilometraje'=> $request->kilometraje,
+                'stock'=> $request->stock,
+                'categoria'=> $request->categoria,
+                'rutaAuto'=> $fileName
+                ])
+            );
+
+            Storage::disk('autos')->put('/' . $fileName, file_get_contents($image));
+
+            return redirect('autos.index');
+        }
+    }
+    // FIN DEL CODIGO 2
+
 
     public function index(){
 
@@ -34,6 +61,14 @@ class AutoController extends Controller
     public function store(Request $request){
         $auto = new Auto();
 
+        if( $request->hasFile('rutaAuto')){
+            $file = $request->file('rutaAuto');
+            $destinationPath = 'images/featureds/';
+            $filename = time() . '-' . $file->getClientOriginalName();
+            $uploadSucces = $request->file('rutaAuto')->move($destinationPath, $filename);
+            $auto->rutaAuto = $destinationPath . $filename;
+        }
+        
         $auto->marca = $request->marca;
         $auto->modelo = $request->modelo;
         $auto->precio = $request->precio;

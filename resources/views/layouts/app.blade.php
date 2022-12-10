@@ -52,14 +52,14 @@
         }
         /* tamaño de la carta */
         .card {
-            height: 37vh;
-            width: 50vw;
+            /* height: 100px;
+            width:600px;
             border-radius: 20px;
             padding: 1rem;
             transition: all 0.8s;
             background-color: rgba(255, 255, 255, 0.1);
             border: 1px solid white;
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px); */
         }
         /* login */
         .card-header{

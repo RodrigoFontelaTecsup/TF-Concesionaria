@@ -56,7 +56,7 @@ Route::get('/home/alquiler', [AlquilerController::class, 'index'])->name('alquil
 
 Route::get('/home/catalogo', [HomeController::class, 'index'])->name('home');
 
-Route::get('/home/categoria', [CategoriaController::class, 'categorias']);
+Route::get('/home/categoria', [CategoriaController::class, 'categorias'])->name('categoria');
 
 // FIN DE RUTAS CLIENTES
 
