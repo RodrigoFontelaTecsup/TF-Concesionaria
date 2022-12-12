@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});   
+Route::namespace('Sdkconsultoria\WhatsappCloudApi\Http\Controllers')->group(function () {
+Route::get('whatsapp-webhook-subscribe', 'WebhookController@subscribe')->name('meta.webhook.subscribe');
+Route::post('whatsapp-webhook', 'WebhookController@webhook');
 });
 
 

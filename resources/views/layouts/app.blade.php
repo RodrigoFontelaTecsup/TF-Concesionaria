@@ -52,24 +52,24 @@
         }
         /* tamaño de la carta */
         .card {
-            /* height: 100px;
-            width:600px;
+            height: 37vh;
+            width:50vw;
             border-radius: 20px;
             padding: 1rem;
             transition: all 0.8s;
             background-color: rgba(255, 255, 255, 0.1);
             border: 1px solid white;
-            backdrop-filter: blur(10px); */
+            backdrop-filter: blur(10px);
         }
         /* login */
         .card-header{
             text-align: center;
-            font-size: 20px;    
+            font-size: 40px;    
         }
 
         #cardregister {
             height: 80vh;
-            width: 50vw;
+            width: 60vw;
         }
 
         #registrar {
@@ -111,8 +111,10 @@
             outline: none;
             margin-bottom: 1rem;
             color: white;
+            text-align: left;
         }
         
+        .
         .j{
             margin-left: 120px;
         }
