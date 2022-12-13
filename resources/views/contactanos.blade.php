@@ -1210,11 +1210,6 @@
 
 
 <div class="jumbotron d-flex align-items-center">
-
-
-
-
-
     <div class="container mx-auto mt-5 text-center"
         style="margin-left:40%; position:fixed; border:4px black; padding: 40px; widht:100px; background-color:rgba(255, 255, 255, 0.554);">
         <h1 style="font-size: 35px; margin-left: 25%; position: relative;">Datos</h1>

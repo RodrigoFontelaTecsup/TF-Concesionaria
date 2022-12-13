@@ -322,7 +322,7 @@
                                 <a class="nav-link active" href="{{ route('categoria') }}">CATEGORIA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('contactanos') }}">CONTACTANOS!</a>
+                                <a class="nav-link active" href="{{ route('contacto') }}">CONTACTANOS!</a>
                             </li>
                         </ul>
                         

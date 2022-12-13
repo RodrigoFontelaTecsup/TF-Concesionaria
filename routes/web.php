@@ -13,7 +13,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactanosController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\VentaController;
-
+use App\Http\Controllers\MessengerController;
 
 
 
@@ -28,12 +28,12 @@ use App\Http\Controllers\VentaController;
 |
 */
 
-// Ruta crud 
 
-// Ruta para controlar vistas admin | usuarios
 Route::get('/login', [SessionController::class, 'redirect']);
 
+// Ruta crud 
 Auth::routes();
+// Ruta para controlar vistas admin | usuarios
 
 Route::get('/', function () {
     return view('welcome');});
@@ -44,11 +44,12 @@ Route::post('/login', [SessionController::class, 'redirect']);
 // Ruta home (PAGINA PRINCIPAL)
 Route::get('/home', [HomeController::class, 'home'])->name('welcome');
 
+
 // RUTAS DE CLIENTES
 
-Route::get('/home/contactanos', [ContactanosController::class, 'index'])->name('contactanos');
+Route::get('/home/contacto', [ContactanosController::class, 'index'])->name('contacto');
 
-Route::post('/home/contactanos', [ContactanosController::class, 'store'])->name('store');
+Route::post('/home/contacto', [ContactanosController::class, 'store'])->name('store');
 
 Route::get('/home/comprar', [CompraController::class, 'index'])->name('comprar.index');
 
@@ -97,11 +98,8 @@ Route::get('/cliente/alquiler', [CompraController::class, 'comprarAuto']);
 
 Route::get('/cliente/almacen',function(){
     return '/cliente/almacen';
+
+
+// Ruta para comprobante de pago
+Route::get('/Detalle/PDF/{id}', [PDFController::class, 'Home'])->name('PDF');
 });
-
-?>
-
-
-
-
-

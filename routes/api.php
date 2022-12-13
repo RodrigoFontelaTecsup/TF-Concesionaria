@@ -21,5 +21,6 @@ Route::namespace('Sdkconsultoria\WhatsappCloudApi\Http\Controllers')->group(func
 Route::get('whatsapp-webhook-subscribe', 'WebhookController@subscribe')->name('meta.webhook.subscribe');
 Route::post('whatsapp-webhook', 'WebhookController@webhook');
 });
+// Route::post('messenger/{phone}', 'App\Http\Controllers\MessengerController@send');
 
 

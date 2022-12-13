@@ -2,7 +2,7 @@
 <form action="{{ route('autos.store') }}" method="POST" class="formulario"
     enctype="multipart/form-data">
 
-    <!-- @csrf -->
+    @csrf
     
     <h2 class="text-2x1 text-center py-4 mb-4 font-semibold">Registro de nuevo auto</h2>
 
@@ -68,6 +68,7 @@
     .caja{
         margin: 0 auto;
         width: 90%;
+        color: rgba(0, 0, 0, 0.81);
     }
     .img{
     }

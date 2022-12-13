@@ -16,6 +16,13 @@
                         <p class="des">Kilometraje: {{ $item->kilometraje }}</p>
                         <p class="des">Stock: {{ $item->stock }}</p>
                         <p class="des">Categoria: {{ $item->categoria }}</p>
+                        <a href="{{ route('comprar.index') }}">
+                            <button type="submit" class="des bt">Comprar</button>
+                        </a>
+                        <a href="{{ route('alquiler') }}">
+                            <button type="submit" class="des bt">Alquilar</button>
+                        </a>
+                        
                     </div>
                 </div>
             </div>
@@ -23,6 +30,7 @@
     </div>
 
     <style>
+
         .tage{
                 
             background-color: #5a5a5a;
@@ -47,16 +55,18 @@
         .des{
             margin: 5%;
             font-size: 1em;
-            width: auto;
-            margin-left: 15%;
+            width: 160%;
+            
+
         }
         .card{
             width: 80%;
-            height: 520px;
+            height:700px;
             margin: 3%;
             background-color: rgba(0, 0, 0, 0.500);
             border-radius:5%;
-            
+            font-family: Georgia, 'Times New Roman', Times, serif;
+       
         }
         .vista{
             margin: 0 auto;
@@ -69,8 +79,18 @@
             margin-top: -10%;
             margin-left: 55%;
             text-align: center;
-            color: aqua;
+            <color: white;
+            text-decoration: underline;
             font-size: 2em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .bt{
+            border-radius: 10px;
+            background-color: black;
+            color:white;
+            border-color:white;        
+            border: 2px solid white;
+            font-size: 1.2em;
         }
     </style>
 @endsection

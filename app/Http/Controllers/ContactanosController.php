@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\ContactanosMailable;
 use Illuminate\Http\Request;
+use App\Mail\ContactanosMailable;
 use Illuminate\Support\Facades\Mail;
 
 class ContactanosController extends Controller
 {
     public function index(){
-        return view('contactanos');
+        return view('contacto');
+        // return view('contactanos');
     }
 
     public function store(Request $request){
@@ -21,9 +22,8 @@ class ContactanosController extends Controller
         // ]);
 
         $correo = new ContactanosMailable($request->all());
-        Mail::to('rodrigofontela123@gmail.com')->send($correo);
+        Mail::to('Nira.Motors@gmail.com')->send($correo);
 
-        return redirect()->route('contactanos');
-
+        return redirect()->route('contacto')->with('info', 'Mensaje enviado correctamente');
     }
 }

@@ -10,14 +10,15 @@ use App\Models\User;
 
 class CompraController extends Controller
 {
-    public function comprarImagenAuto(String $nombre){
-        $file = Storage::disk('autos')->get($nombre);
-        return Image::make($file)->response();
-    }
-    public function comprarAuto($id){
-        $autos = Auto::where('id',$id)->first();
-        return view('compra')->with('auto',$autos);
-    }
+    // public function comprarImagenAuto(String $nombre){
+    //     $file = Storage::disk('autos')->get($nombre);
+    //     return Image::make($file)->response();
+    // }
+
+    // public function comprarAuto($id){
+    //     $autos = Auto::where('id',$id)->first();
+    //     return view('compra')->with('auto',$autos);
+    // }
 
     public function index(){
         return view('compra');

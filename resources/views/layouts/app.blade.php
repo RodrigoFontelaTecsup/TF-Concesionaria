@@ -52,8 +52,8 @@
         }
         /* tamaño de la carta */
         .card {
-            height: 37vh;
-            width:50vw;
+            height: 45vh;
+            width: 50vw;
             border-radius: 20px;
             padding: 1rem;
             transition: all 0.8s;
@@ -69,7 +69,7 @@
 
         #cardregister {
             height: 80vh;
-            width: 60vw;
+            width: 45vw;
         }
 
         #registrar {

@@ -55,7 +55,7 @@
               </label>
             </li>
             <li>
-              <button type="submit" class="button">Pay Now</button>
+              <button type="submit" class="button"><a href="#">Pay Now</a></button>
             </li>
           </ul>
         </form>
