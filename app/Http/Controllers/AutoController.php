@@ -63,7 +63,7 @@ class AutoController extends Controller
 
         if( $request->hasFile('rutaAuto')){
             $file = $request->file('rutaAuto');
-            $destinationPath = 'images/featureds/';
+            $destinationPath = 'images/autos/';
             $filename = time() . '-' . $file->getClientOriginalName();
             $uploadSucces = $request->file('rutaAuto')->move($destinationPath, $filename);
             $auto->rutaAuto = $destinationPath . $filename;

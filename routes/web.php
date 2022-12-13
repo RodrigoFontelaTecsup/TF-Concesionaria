@@ -28,7 +28,7 @@ use App\Http\Controllers\MessengerController;
 |
 */
 
-
+// Ruta login
 Route::get('/login', [SessionController::class, 'redirect']);
 
 // Ruta crud 

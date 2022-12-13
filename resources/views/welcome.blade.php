@@ -31,25 +31,27 @@
             font-size: var(--bs-body-font-size);
             font-weight: var(--bs-body-font-weight);
             line-height: var(--bs-body-line-height);
-            color: var(--bs-body-color);agr
-            text-align: var(--bs-body-text-align);
+            color: var(--bs-body-color);
+            agr text-align: var(--bs-body-text-align);
             background: linear-gradient(90deg, rgb(40, 41, 88) 0%, rgb(18, 74, 125) 32%, rgb(20, 106, 136) 52%, rgb(0, 104, 163) 94%);
             background-size: 300% 100%;
             animation: gradient 12s ease infinite;
             -webkit-text-size-adjust: 100%;
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            
+
             /*Fondo*/
             background-image: url(https://acegif.com/wp-content/uploads/gifs/race-car-19.gif);
             background-position: center;
             background-size: cover;
-            background-attachment: fixed; 
+            background-attachment: fixed;
         }
-        .h2-titulos{
+
+        .h2-titulos {
             font-size: 50px;
             color: white;
             text-shadow: 0 0 5px white, 0 0 15px white, 0 0 20px white,
         }
+
         @keyframes gradient {
             0% {
                 background-position: 0% 50%;
@@ -219,10 +221,12 @@
         .dropdown-toggle {
             outline: 0;
         }
-        .rounded-circle{
+
+        .rounded-circle {
             margin-left: 110px;
         }
-        #boton{
+
+        #boton {
             width: 150px;
             height: 50px;
             background: linear-gradient(90deg, rgb(40, 41, 88) 0%, rgb(18, 74, 125) 32%, rgb(20, 106, 136) 52%, rgb(0, 104, 163) 94%);
@@ -245,38 +249,41 @@
                 background-position: 0% 50%;
             }
         }
-        #circulo{
-         height: 210px;
-         border-radius: 55px;
-         background: rgba(0, 0, 0, 0.500);
-         color: black;
-         font-size: 14px;
-         font-weight: 600;
-         text-transform: uppercase;
-         border: none;
-         margin-bottom: 1rem;
-         cursor: pointer;
-         transition: all 0.4s ease-in-out;
+
+        #circulo {
+            height: 210px;
+            border-radius: 55px;
+            background: rgba(0, 0, 0, 0.500);
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: none;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
         }
-        #dato{
-        border-radius: 55px;
-        background: rgba(0, 0, 0, 0.450);
-         color: whitesmoke;
-         font-weight: 600;
-         border: none;
-         margin-bottom: 1rem;
-         cursor: pointer;
-         transition: all 0.4s ease-in-out;
+
+        #dato {
+            border-radius: 55px;
+            background: rgba(0, 0, 0, 0.450);
+            color: whitesmoke;
+            font-weight: 600;
+            border: none;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
         }
-        #imagen{
-         border-radius: 55px;
-         background: rgba(255, 255, 255, 0.200);
-         color: whitesmoke;
-         font-weight: 600;
-         border: none;
-         margin-bottom: 1rem;
-         cursor: pointer;
-         transition: all 0.4s ease-in-out;
+
+        #imagen {
+            border-radius: 55px;
+            background: rgba(255, 255, 255, 0.200);
+            color: whitesmoke;
+            font-weight: 600;
+            border: none;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
         }
     </style>
 
@@ -288,20 +295,22 @@
 <body>
 
     <header>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        INICIO
-                    
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                        <span class="navbar-toggler-icon"></span>
-                        
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                            @guest
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    INICIO
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        @guest
                             <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('login') }}">LOGIN</a>
                             </li>
@@ -311,7 +320,7 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('home') }}">CATALOGO</a>
                             </li>
-                            @else
+                        @else
                             <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('home') }}">CATALOGO</a>
                             </li>
@@ -325,40 +334,46 @@
                                 <a class="nav-link active" href="{{ route('contacto') }}">CONTACTANOS!</a>
                             </li>
                         </ul>
-                        
+
                         <div class="dropdown text-end">
-                            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="https://peru21.pe/resizer/NBlbnlt-TxnMTjRNU1t9FzRb7lk=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/7HZ5PE55JJHCVP5A2O7F2BGV3Y.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+                            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://peru21.pe/resizer/NBlbnlt-TxnMTjRNU1t9FzRb7lk=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/7HZ5PE55JJHCVP5A2O7F2BGV3Y.jpg"
+                                    alt="mdo" width="32" height="32" class="rounded-circle">
                             </a>
-                            
+
                             <ul class="dropdown-menu text-small">
 
-                                <li><a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Cerrar Sesion</a>
+                                <li><a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();document.getElementById('logout-form').submit();">Cerrar
+                                        Sesion</a>
                                 </li>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
                                 </form>
                             </ul>
-                            @endguest
-                        </div>
-                        
+                        @endguest
                     </div>
+
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
     <main>
 
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            
-        <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" src="https://img.remediosdigitales.com/46acfd/hyperion-xp-1-04/1366_521.jpg" />
-                    <div class="container" >
+                    <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        src="https://img.remediosdigitales.com/46acfd/hyperion-xp-1-04/1366_521.jpg" />
+                    <div class="container">
                         <div class="carousel-caption" id="dato">
                             <h1>Deportivos</h1>
                             <p>Some representative placeholder content for the first slide of the carousel.</p>
@@ -366,9 +381,11 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="https://cdn.cheapism.com/images/2020tuscon.2e16d0ba.fill-1440x605.jpg" />
+                    <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"
+                        src="https://cdn.cheapism.com/images/2020tuscon.2e16d0ba.fill-1440x605.jpg" />
 
-                    <div class="container" >
+                    <div class="container">
                         <div class="carousel-caption" id="dato">
                             <h1>Another example headline.</h1>
                             <p>Some representative placeholder content for the second slide of the carousel.</p>
@@ -376,13 +393,16 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="https://la-motorbit-media.s3.amazonaws.com/2016/08/modelos-autos-clasicos-hindustan.jpg" />
+                    <img class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true"
+                        preserveAspectRatio="xMidYMid slice" focusable="false"
+                        src="https://la-motorbit-media.s3.amazonaws.com/2016/08/modelos-autos-clasicos-hindustan.jpg" />
 
-                    <div class="container" >
+                    <div class="container">
                         <div class="carousel-caption" id="dato">
                             <h1>Clasicos</h1>
                             <br>
-                            <p><a class="btn btn-lg btn-primary" id = "boton" href="{{ route('home') }}">Catalogo</a></p>
+                            <p><a class="btn btn-lg btn-primary" id="boton" href="{{ route('home') }}">Catalogo</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -408,11 +428,15 @@
             <div class="row" id="">
 
 
-            
+
                 <div class="" style="text-align:center;">
-                <iframe width="1200" height="500" src="https://www.youtube-nocookie.com/embed/YViEpnmDrn0?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="1200" height="500"
+                        src="https://www.youtube-nocookie.com/embed/YViEpnmDrn0?autoplay=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div><!-- /.col-lg-4 -->
-                
+
 
             </div><!-- /.row -->
 
@@ -424,22 +448,31 @@
             <div class="row featurette">
                 <div class="col-md-7">
                     <h2 class="h2-titulos">Toyota Hilux</h2>
-                    <p class="lead">REDISEÑADA CON UNA NUEVA MÁSCARA FRONTAL CON FAROS LED QUE LE DAN UN ESTILO MÁS AGRESIVO, RESALTANDO SU FUERZA Y RESISTENCIA EN TODOS LOS CAMINOS.</p>
+                    <p class="lead">REDISEÑADA CON UNA NUEVA MÁSCARA FRONTAL CON FAROS LED QUE LE DAN UN ESTILO MÁS
+                        AGRESIVO, RESALTANDO SU FUERZA Y RESISTENCIA EN TODOS LOS CAMINOS.</p>
                 </div>
-                <div class="col-md-5" id ="imagen">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://www.toyotaperu.com.pe/sites/default/files/HILUX.png" width="430" height="430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <div class="col-md-5" id="imagen">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        src="https://www.toyotaperu.com.pe/sites/default/files/HILUX.png" width="430"
+                        height="430" xmlns="http://www.w3.org/2000/svg" role="img"
+                        aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
                 </div>
             </div>
 
             <hr class="featurette-divider">
 
             <div class="row featurette">
-                <div class="col-md-7 order-md-2" >
+                <div class="col-md-7 order-md-2">
                     <h2 class="h2-titulos">Minivan Toyota Avanzada</h2>
-                    <p class="lead"> LA NUEVA MINIVAN TOYOTA AVANZA EVOLUCIONÓ CONTIGO PARA DARTE LA POTENCIA Y ESPACIO QUE NECESITAS PARA SEGUIR CRECIENDO JUNTO A TODA TU FAMILIA. PREPÁRATE PARA UN NUEVO CAPÍTULO EN TU VIDA.</p>
+                    <p class="lead"> LA NUEVA MINIVAN TOYOTA AVANZA EVOLUCIONÓ CONTIGO PARA DARTE LA POTENCIA Y
+                        ESPACIO QUE NECESITAS PARA SEGUIR CRECIENDO JUNTO A TODA TU FAMILIA. PREPÁRATE PARA UN NUEVO
+                        CAPÍTULO EN TU VIDA.</p>
                 </div>
-                <div class="col-md-5 order-md-1" id ="imagen">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://www.toyotaperu.com.pe/sites/default/files/Avanza_Miniatura%20%281%29.png" width="430" height="430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <div class="col-md-5 order-md-1" id="imagen">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        src="https://www.toyotaperu.com.pe/sites/default/files/Avanza_Miniatura%20%281%29.png"
+                        width="430" height="430" xmlns="http://www.w3.org/2000/svg" role="img"
+                        aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
                 </div>
             </div>
 
@@ -448,10 +481,14 @@
             <div class="row featurette">
                 <div class="col-md-7">
                     <h2 class="h2-titulos">Toyota Prius C</h2>
-                    <p class="lead"> TOYOTA PRIUS C: EL HATCHBACK HÍBRIDO DE TOYOTA, COMPACTO Y ÁGIL PARA LA GRAN CIUDAD, CON EL PODER Y LA EFICIENCIA DEL SISTEMA HYBRID SYNERGY DRIVE.</p>
+                    <p class="lead"> TOYOTA PRIUS C: EL HATCHBACK HÍBRIDO DE TOYOTA, COMPACTO Y ÁGIL PARA LA GRAN
+                        CIUDAD, CON EL PODER Y LA EFICIENCIA DEL SISTEMA HYBRID SYNERGY DRIVE.</p>
                 </div>
-                <div class="col-md-5"id ="imagen">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://www.toyotaperu.com.pe/sites/default/files/prius-c_322X189PX_0.png" width="430" height="430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <div class="col-md-5"id="imagen">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        src="https://www.toyotaperu.com.pe/sites/default/files/prius-c_322X189PX_0.png" width="430"
+                        height="430" xmlns="http://www.w3.org/2000/svg" role="img"
+                        aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
 
                 </div>
             </div>
@@ -461,10 +498,15 @@
             <div class="row featurette">
                 <div class="col-md-7 order-md-2">
                     <h2 class="h2-titulos">Toyota Raize</h2>
-                    <p class="lead">LA NUEVA RAIZE LLEGÓ CON MUCHO MÁS DE LO QUE ESPERABAS EN TU PRIMERA SUV. DESCUBRE SU DISEÑO JUVENIL Y LA VARIEDAD DE COLORES EN LOS QUE LLEGA PARA COMBINAR A LA PERFECCIÓN CONTIGO Y TODOS TUS OUTFITS.</p>
+                    <p class="lead">LA NUEVA RAIZE LLEGÓ CON MUCHO MÁS DE LO QUE ESPERABAS EN TU PRIMERA SUV.
+                        DESCUBRE SU DISEÑO JUVENIL Y LA VARIEDAD DE COLORES EN LOS QUE LLEGA PARA COMBINAR A LA
+                        PERFECCIÓN CONTIGO Y TODOS TUS OUTFITS.</p>
                 </div>
-                <div class="col-md-5 order-md-1"id ="imagen">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://www.toyotaperu.com.pe/sites/default/files/MiniaturaWeb-Raize.png" width="430" height="430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <div class="col-md-5 order-md-1"id="imagen">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        src="https://www.toyotaperu.com.pe/sites/default/files/MiniaturaWeb-Raize.png" width="430"
+                        height="430" xmlns="http://www.w3.org/2000/svg" role="img"
+                        aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
                 </div>
             </div>
 
@@ -473,10 +515,14 @@
             <div class="row featurette">
                 <div class="col-md-7">
                     <h2 class="h2-titulos">Toyota Rav4</h2>
-                    <p class="lead">EXPANDE TUS LÍMITES EN LA NUEVA Y REDISEÑADA RAV4, LA SUV QUE COMBINA UNA DINÁMICA DE CONDUCCIÓN REFINADA CON UNA NOVEDOSA POSTURA MÁS ROBUSTA.</p>
+                    <p class="lead">EXPANDE TUS LÍMITES EN LA NUEVA Y REDISEÑADA RAV4, LA SUV QUE COMBINA UNA
+                        DINÁMICA DE CONDUCCIÓN REFINADA CON UNA NOVEDOSA POSTURA MÁS ROBUSTA.</p>
                 </div>
-                <div class="col-md-5"id ="imagen">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://www.toyotaperu.com.pe/sites/default/files/miniatura_rav4_0.png" width="430" height="430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <div class="col-md-5"id="imagen">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        src="https://www.toyotaperu.com.pe/sites/default/files/miniatura_rav4_0.png" width="430"
+                        height="430" xmlns="http://www.w3.org/2000/svg" role="img"
+                        aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
                 </div>
             </div>
 
@@ -493,7 +539,16 @@
     </main>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="{{ asset('js/app.js')}}"></script>
 
+    <script>
+        Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Something went wrong!',
+  footer: '<a href="">Why do I have this issue?</a>'
+})
+    </script>
 </body>
 
 </html>
