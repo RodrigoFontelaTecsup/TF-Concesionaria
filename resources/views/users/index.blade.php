@@ -36,22 +36,8 @@
         
         </div>
         <div class="boxi">
-            INICIO
+            <a href="{{ route('admin.index') }}">INICIO</a>
         </div >
-        <div class="boxi">
-            CLIENTES
-        </div>
-        <div class="boxi">
-            VENTAS
-        </div>
-        <div class="boxi">
-            ALQUILERES
-        </div >
-        <div class="boxi">
-            AUTOS
-        </div>
-
-
     </div>
     @extends('layouts.plantilla')
 @section('title', 'CRUD DE USUARIOS REGISTRADOS')

@@ -20,33 +20,6 @@ class AutoController extends Controller
         return Image::make($file)->response();
     }
 
-    // ESTE CODIGO SE PUEDE ELIMINAR (CODIGO 2)
-    public function subirAuto(Request $request){
-        if($request->hashFile('auto')){
-            $id = auth()->user()->id;
-            $image = $request->file('auto');
-            $fileName = time() . '.' . $image->getClientOriginalExtension();
-            $user = Auto::find($id);
-            $auto = $user->Autos()->save(
-                new Auto(['marca' => $request->marca,
-                'modelo'=> $request->modelo,
-                'precio'=> $request->precio,
-                'color' => $request->color,
-                'kilometraje'=> $request->kilometraje,
-                'stock'=> $request->stock,
-                'categoria'=> $request->categoria,
-                'rutaAuto'=> $fileName
-                ])
-            );
-
-            Storage::disk('autos')->put('/' . $fileName, file_get_contents($image));
-
-            return redirect('autos.index');
-        }
-    }
-    // FIN DEL CODIGO 2
-
-
     public function index(){
 
         $autos = Auto::all();

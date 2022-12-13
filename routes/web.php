@@ -12,8 +12,8 @@ use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactanosController;
 use App\Http\Controllers\SessionController;
-use App\Http\Controllers\VentaController;
 use App\Http\Controllers\MessengerController;
+
 
 
 
@@ -53,7 +53,11 @@ Route::post('/home/contacto', [ContactanosController::class, 'store'])->name('st
 
 Route::get('/home/comprar', [CompraController::class, 'index'])->name('comprar.index');
 
+Route::post('/home/comprar', [CompraController::class, 'store'])->name('comprar.store');
+
 Route::get('/home/alquiler', [AlquilerController::class, 'index'])->name('alquiler');
+
+Route::post('/home/alquiler', [AlquilerController::class, 'store'])->name('alquiler.store');
 
 Route::get('/home/catalogo', [HomeController::class, 'index'])->name('home');
 
@@ -73,33 +77,8 @@ Route::resource('/admin/users', UsersController::class);
 
 Route::resource('/admin/autos', AutoController::class);
 
-Route::get('/admin/venta', [VentaController::class, 'index'])->name('venta.index');
+Route::get('/admin/compra', [CompraController::class, 'compra'])->name('comprar.index');
 
 Route::get('/admin/alquiler', [ALquilerController::class, 'alquiler'])->name('alquiler.index');
 
 // FIN DE RUTAS DEL ADMINISTRADOR 
-
-
-
-
-
-
-
-// RUTAS POR VALIDAR
-Route::get('/mostrarImagenAuto/{nombre}', [App\Http\Controllers\AutoController::class, 'mostrarImagenAuto'])->name('mostrarImagenAuto');
-
-Route::get('/compras/{id}',[CompraController::class, 'comprarAuto']);
-
-Route::get('/comprarImagenAuto/{nombre}',[CompraController::class, 'comprarImagenAuto'])->name('comprarImagenAuto');
-
-Route::get('/misCarros/{id_auto}',[MisAutosController::class, 'misCarros']);
-
-Route::get('/cliente/alquiler', [CompraController::class, 'comprarAuto']);
-
-Route::get('/cliente/almacen',function(){
-    return '/cliente/almacen';
-
-
-// Ruta para comprobante de pago
-Route::get('/Detalle/PDF/{id}', [PDFController::class, 'Home'])->name('PDF');
-});

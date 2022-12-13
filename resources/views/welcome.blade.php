@@ -539,15 +539,12 @@
     </main>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="{{ asset('js/app.js')}}"></script>
-
-    <script>
-        Swal.fire({
-  icon: 'error',
-  title: 'Oops...',
-  text: 'Something went wrong!',
-  footer: '<a href="">Why do I have this issue?</a>'
-})
+    <script type="text/javascript" src="/js/app.js">
+        Swal.fire(
+  'The Internet?',
+  'That thing is still around?',
+  'question'
+)
     </script>
 </body>
 
